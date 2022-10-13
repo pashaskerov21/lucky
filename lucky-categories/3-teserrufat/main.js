@@ -28,7 +28,7 @@ let termsLinkBtn = document.getElementById("terms-link-btn");
 let termsIcon = document.querySelector("#terms-link-btn i");
 let termsLinkMenu = document.getElementById("terms-link-menu");
 
-termsLinkBtn.addEventListener("click", () => {
+termsIcon.addEventListener("click", () => {
   if (window.outerWidth < 768) {
     if (termsLinkMenu.classList.contains("d-none") == true) {
       termsIcon.classList.remove("rotate-icon-2");

@@ -347,7 +347,7 @@ header {
   text-align: center;
   line-height: 40px;
 }
-#bnav-category-btn #btn-name a {
+#bnav-category-btn #btn-name p {
   color: #fff;
   margin: 0 8px;
   font-size: 20px;
