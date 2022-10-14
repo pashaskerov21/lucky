@@ -196,6 +196,7 @@ pageUpScrollBtn.onclick = function(){
 
 
 
+let productItems = document.querySelectorAll(".product-item");
 
 let productPriceValue = document.querySelectorAll(".product-price-value"); //Mehsulun qiymetini gosteren p elementi
 let productValue = document.querySelectorAll(".product-value"); // mehsulun sayini gosteren input elementi
@@ -204,22 +205,21 @@ let decraseButton = document.querySelectorAll(".decrase-button");
 let increaseButton = document.querySelectorAll(".increase-button");
 
 let commonProductSumValue = document.getElementById("common-product-sum-value"); // umumi meblegi gosteren p elementi
-
+let visibleSumValue = document.querySelectorAll(".visible-item .product-sum-value");
 let mainSum = 0;
-for(let i = 0; i < productSumValue.length; i++){
-    mainSum += Number(productSumValue[i].innerHTML)
+for(let i = 0; i < productItems.length;i++){
+    if(productItems[i].classList.contains("d-lg-none") == false){
+        productItems[i].classList.add("correct-item");
+    }
 }
-if(mainSum < 1){
-    commonProductSumValue.innerHTML = mainSum.toPrecision(2);
-}else if(mainSum < 10){
-    commonProductSumValue.innerHTML = mainSum.toPrecision(3);
-}else if(mainSum < 100){
-    commonProductSumValue.innerHTML = mainSum.toPrecision(4);
-}else if(mainSum < 1000){
-    commonProductSumValue.innerHTML = mainSum.toPrecision(5);
-}else{
-    commonProductSumValue.innerHTML = mainSum.toPrecision(6);
+mainSum = 0;
+let correctItemValue = document.querySelectorAll(".correct-item .product-sum-value");
+for(let i = 0; i < correctItemValue.length; i++){
+    //alert(correctItemValue.length);
+    mainSum += parseFloat(correctItemValue[i].innerHTML);
 }
+commonProductSumValue.innerHTML = mainSum.toFixed(2);
+
 
 for(let i = 0; i < increaseButton.length; i++){
     (function(index){
@@ -230,29 +230,14 @@ for(let i = 0; i < increaseButton.length; i++){
             decraseButton[index].removeAttribute("disabled");
             let pVal = parseFloat(productPriceValue[index].innerHTML);
             let sum = inputVal * pVal;
-            if(sum < 1){
-                productSumValue[index].innerHTML = sum.toPrecision(2);
-            }else if(sum < 10){
-                productSumValue[index].innerHTML = sum.toPrecision(3);
-            }else if(sum < 100){
-                productSumValue[index].innerHTML = sum.toPrecision(4);
-            }else if(sum < 1000){
-                productSumValue[index].innerHTML = sum.toPrecision(5);
-            }else{
-                productSumValue[index].innerHTML = sum.toPrecision(6);
-            }
+            productSumValue[index].innerHTML = sum.toFixed(2);
+            
+
+            
+            console.log(mainSum);
             mainSum += pVal;
-            if(mainSum < 1){
-                commonProductSumValue.innerHTML = mainSum.toPrecision(2); 
-            }else if(mainSum < 10){
-                commonProductSumValue.innerHTML = mainSum.toPrecision(3);
-            }else if(mainSum < 100){
-                commonProductSumValue.innerHTML = mainSum.toPrecision(4);
-            }else if(mainSum < 1000){
-                commonProductSumValue.innerHTML = mainSum.toPrecision(5);
-            }else{
-                commonProductSumValue.innerHTML = mainSum.toPrecision(6);
-            }
+            commonProductSumValue.innerHTML = mainSum.toFixed(2);
+            
         }
 
     })(i);
@@ -269,29 +254,102 @@ for(let i = 0; i < decraseButton.length; i++){
             let pVal = parseFloat(productPriceValue[index].innerHTML);
             let oldsum = parseFloat(productSumValue[index].innerHTML);
             let newsum = oldsum - pVal;
-            if(newsum < 1){
-                productSumValue[index].innerHTML = newsum.toPrecision(2);
-            }else if(newsum < 10){
-                productSumValue[index].innerHTML = newsum.toPrecision(3);
-            }else if(newsum < 100){
-                productSumValue[index].innerHTML = newsum.toPrecision(4);
-            }else if(newsum < 1000){
-                productSumValue[index].innerHTML = newsum.toPrecision(5);
-            }else{
-                productSumValue[index].innerHTML = newsum.toPrecision(6);
-            }
+            productSumValue[index].innerHTML = newsum.toFixed(2);
+            
             mainSum -= pVal;
-            if(mainSum < 1){
-                commonProductSumValue.innerHTML = mainSum.toPrecision(2); 
-            }else if(mainSum < 10){
-                commonProductSumValue.innerHTML = mainSum.toPrecision(3);
-            }else if(mainSum < 100){
-                commonProductSumValue.innerHTML = mainSum.toPrecision(4);
-            }else if(mainSum < 1000){
-                commonProductSumValue.innerHTML = mainSum.toPrecision(5);
-            }else{
-                commonProductSumValue.innerHTML = mainSum.toPrecision(6);
-            }
+            commonProductSumValue.innerHTML = mainSum.toFixed(2);
+            
         }
     })(i);
 }
+
+let deleteProductBtns = document.querySelectorAll(".delete-product-button");
+let shoppingSpan = document.querySelector("#nav-shopping-btn span");
+
+let visibleItem = document.querySelectorAll(".visible-item");
+shoppingSpan.innerHTML = visibleItem.length;
+
+for(let i = 0; i < deleteProductBtns.length;i++){
+    (function(index){
+        deleteProductBtns[i].addEventListener("click",function(){
+            productItems[index].classList.add("d-none","d-lg-none");
+            //commonProductSumValue.innerHTML = mainSum - Number(productSumValue[index].innerHTML);
+            let mainVal = parseFloat(commonProductSumValue.innerHTML);
+            let itemVal = parseFloat(productSumValue[index].innerHTML);
+            let result = mainVal - itemVal;
+            commonProductSumValue.innerHTML = result.toFixed(2);
+            
+
+            let shoppingSpanValue = parseInt(shoppingSpan.innerHTML);
+            shoppingSpanValue -= 1;
+            shoppingSpan.innerHTML = shoppingSpanValue;
+
+        })
+    })(i);
+}
+
+let navHeartBtn = document.getElementById("nav-heart-btn");
+let navHeartBtnSpan = document.querySelector("#nav-heart-btn span")
+let navHeartBtnSpanValue = parseInt(navHeartBtnSpan.innerHTML);
+let cardWhiteHeartBtns = document.querySelectorAll(".card-white-heart-btn");
+let cardFavoriteBtns = document.querySelectorAll(".card-favorite-btn");
+
+for (let i = 0; i < cardWhiteHeartBtns.length; i++){
+    (function(index){
+      cardWhiteHeartBtns[i].addEventListener("click", myScript);
+      function myScript(){
+        cardWhiteHeartBtns[index].classList.add("d-none");
+        cardFavoriteBtns[index].classList.remove("d-none");
+        navHeartBtnSpanValue += 1;
+        navHeartBtnSpan.innerHTML = navHeartBtnSpanValue;
+      }
+    })(i);
+  }
+
+  for (let i = 0; i < cardFavoriteBtns.length; i++){
+    (function(index){
+      cardFavoriteBtns[i].addEventListener("click", myScript);
+      function myScript(){
+        cardFavoriteBtns[index].classList.add("d-none");
+        cardWhiteHeartBtns[index].classList.remove("d-none");
+        navHeartBtnSpanValue -= 1;
+        navHeartBtnSpan.innerHTML = navHeartBtnSpanValue;
+      }
+    })(i);
+  }
+
+let navShoppingBtn = document.getElementById("nav-shopping-btn");
+//let navShoppingBtnSpan = document.querySelector("#nav-shopping-btn span");
+let navShoppingBtnSpanValue = parseInt(shoppingSpan.innerHTML);
+let productOrderBtns = document.querySelectorAll(".product-order-btn");
+let isCheckedProduct = Array(productOrderBtns.length).fill(false);
+
+let productToast = document.getElementById("product-toast");
+
+let hiddenItems = document.querySelectorAll(".hidden-item");
+let hiddenSumValue = document.querySelectorAll(".hidden-item .product-sum-value");
+
+
+for(let i = 0; i < productOrderBtns.length; i++){
+    (function(index){
+        productOrderBtns[i].addEventListener("click",changeSituation);
+        
+        function changeSituation(){
+            if(isCheckedProduct[index]==false){
+                navShoppingBtnSpanValue += 1;
+                shoppingSpan.innerHTML = navShoppingBtnSpanValue;
+                isCheckedProduct[index] = true;
+            }
+            const toast = new bootstrap.Toast(productToast);
+            toast.show();
+            hiddenItems[index].classList.remove("d-none","d-lg-none");
+            
+            
+            let mainVal = parseFloat(commonProductSumValue.innerHTML);
+            let hiddenVal = parseFloat(hiddenSumValue[index].innerHTML);
+            let result = mainVal + hiddenVal;
+            commonProductSumValue.innerHTML = result.toFixed(2);
+        }
+    })(i);
+}
+

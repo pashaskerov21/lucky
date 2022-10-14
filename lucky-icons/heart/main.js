@@ -195,6 +195,23 @@ pageUpScrollBtn.onclick = function(){
 
 
 
+let cardFavoriteBtn = document.querySelectorAll(".card-favorite-btn");
+let cardItem = document.querySelectorAll(".card-item");
+let heartIconSpan = document.querySelector("#nav-heart-btn span");
+heartIconSpan.innerHTML = cardItem.length;
+
+
+for(let i = 0; i < cardFavoriteBtn.length;i++){
+    (function(index){
+        cardFavoriteBtn[i].addEventListener("click",function(){
+            cardItem[index].classList.add("d-none");
+            let heartSpanValue = parseInt(heartIconSpan.innerHTML);
+            heartSpanValue -= 1;
+            heartIconSpan.innerHTML = heartSpanValue;
+        })
+    })(i);
+}
+
 
 
 

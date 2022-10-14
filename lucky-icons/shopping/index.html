@@ -10,18 +10,19 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-   
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/3cf65b98ce.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   </head>
-  <link rel="stylesheet" href="styles.css" />
+  
   <body>
     <header>
       <!--Register Link-->
       <div class="d-flex justify-content-end container-md p-2">
         <div id="registration-div" class="d-flex">
-          <a href="#" class="px-2 py-1 px-md-4 py-md-2">Daxil ol</a>
-          <a href="#" class="px-2 py-1 px-md-4 py-md-2">Qeydiyyat</a>
+          <a href="../../lucky-account/lucky-login/index.html" class="px-2 py-1 px-md-4 py-md-2">Daxil ol</a>
+          <a href="../../lucky-account/lucky-register/index.html" class="px-2 py-1 px-md-4 py-md-2">Qeydiyyat</a>
         </div>
       </div>
 
@@ -31,7 +32,7 @@
           class="d-flex justify-content-center align-items-center"
           id="tnav-logo"
         >
-          <a href="#"><img src="img/header/logo-header.svg" /></a>
+          <a href="../../lucky-main/index.html"><img src="img/header/logo-header.svg" /></a>
         </div>
         <!--2ci grid element 768den sora yox olacaq-->
         <div
@@ -49,12 +50,12 @@
           class="d-flex justify-content-end justify-content-md-center align-items-center"
           id="tnav-icons"
         >
-          <a href="#" class="mx-1" id="nav-shopping-btn"
+          <a href="index.html" class="mx-1" id="nav-shopping-btn"
             ><i class="fa-solid fa-cart-shopping"></i
-            ><span class="badge">0</span></a
+            ><span class="badge text-center px-0 py-1">0</span></a
           >
-          <a href="#" class="mx-4" id="nav-heart-btn"
-            ><i class="fa-solid fa-heart"></i><span class="badge">0</span></a
+          <a href="../heart/index.html" class="mx-4" id="nav-heart-btn"
+            ><i class="fa-solid fa-heart px-0 py-1"></i><span class="badge">0</span></a
           >
         </div>
         <!--4cu grid element-->
@@ -75,22 +76,22 @@
           <div
             class="d-flex justify-content-center align-items-center mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-4"
           >
-            <a href="#">Haqqımızda</a>
+            <a href="../../lucky-nav-links/1-lucky-info/index.html">Haqqımızda</a>
           </div>
           <div
             class="d-flex justify-content-center align-items-center mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-4"
           >
-            <a href="#">Yeni</a>
+            <a href="../../lucky-nav-links/2-lucky-new-product/index.html">Yeni</a>
           </div>
           <div
             class="d-flex justify-content-center align-items-center mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-4"
           >
-            <a href="#">Endirimlər</a>
+            <a href="../../lucky-nav-links/3-lucky-endirim/index.html">Endirimlər</a>
           </div>
           <div
             class="d-flex justify-content-center align-items-center mx-md-0 mx-lg-2 mx-xl-3 mx-xxl-4"
           >
-            <a href="#">Ən çox satılanlar</a>
+            <a href="../../lucky-nav-links/4-lucky-favorite/index.html">Ən çox satılanlar</a>
           </div>
 
           <div
@@ -104,15 +105,15 @@
               id="terms-link-menu"
               class="d-flex flex-column align-items-center d-none d-md-none align-items-md-start"
             >
-              <a href="#">Çatdırılma</a>
-              <a href="#">Geri qaytarılma və dəyişdirmə</a>
+              <a href="../../lucky-nav-links/5-lucky-terms/catdirilma/index.html">Çatdırılma</a>
+              <a href="../../lucky-nav-links/5-lucky-terms/qaytarilma/index.html">Geri qaytarılma və dəyişdirmə</a>
             </div>
           </div>
 
           <div
             class="d-flex justify-content-center align-items-center mx-md-0 mx-lg-2 mx-xl-3 mx-xxl-4"
           >
-            <a href="#">Əlaqə</a>
+            <a href="../../lucky-nav-links/6-lucky-contact/index.html">Əlaqə</a>
           </div>
         </div>
         <!--6ci grid element-->
@@ -133,7 +134,7 @@
                   src="img/header/ofis-levazimat.svg"
                   class="d-none d-md-block"
                 />
-                <a href="#">Ofis ləvazimatları</a>
+                <a href="../../lucky-categories/1-office/index.html">Ofis ləvazimatları</a>
                 <button class="mobile-menu-btns">
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
@@ -183,7 +184,7 @@
                 class="d-flex justify-content-between align-items-center category-name"
               >
                 <img src="img/header/qida.png" class="d-none d-md-block" />
-                <a href="#">Qida və İçkilər</a>
+                <a href="../../lucky-categories/2-food-drink/index.html">Qida və İçkilər</a>
                 <button id="mobile-food-btn" class="mobile-menu-btns">
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
@@ -213,7 +214,7 @@
                   src="img/header/teserrufat.png"
                   class="d-none d-md-block"
                 />
-                <a href="#">Təsərrüfat malları</a>
+                <a href="../../lucky-categories/3-teserrufat/index.html">Təsərrüfat malları</a>
                 <button class="mobile-menu-btns">
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
@@ -244,7 +245,7 @@
                 class="d-flex justify-content-between align-items-center category-name"
               >
                 <img src="img/header/elektron.webp" class="d-none d-md-block" />
-                <a href="#">Elektron avadanlıq</a>
+                <a href="../../lucky-categories/4-elektron/index.html">Elektron avadanlıq</a>
                 <button class="mobile-menu-btns">
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
@@ -274,7 +275,7 @@
                 class="d-flex justify-content-between align-items-center category-name"
               >
                 <img src="img/header/gul.png" class="d-none d-md-block" />
-                <a href="#">Dibçək gülləri</a>
+                <a href="../../lucky-categories/5-flower/index.html">Dibçək gülləri</a>
                 <button class="mobile-menu-btns">
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
@@ -294,7 +295,7 @@
                 class="d-flex justify-content-between align-items-center category-name"
               >
                 <img src="img/header/hediye.jpg" class="d-none d-md-block" />
-                <a href="#">Hədiyyəlik</a>
+                <a href="../../lucky-categories/6-gift/index.html">Hədiyyəlik</a>
                 <button class="mobile-menu-btns">
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
@@ -314,7 +315,7 @@
                 class="d-flex justify-content-between align-items-center category-name"
               >
                 <img src="img/header/coffee.png" class="d-none d-md-block" />
-                <a href="#">Coffee shop</a>
+                <a href="../../lucky-categories/7-coffee/index.html">Coffee shop</a>
                 <button class="mobile-menu-btns">
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
@@ -336,8 +337,8 @@
     </header>
 
     <main class="d-flex flex-column align-items-center">
-      <section class="d-flex flex-column align-items-center flex-lg-row container">
-        <section id="product-section" class="w-100">
+      <section class="d-flex flex-column align-items-center flex-lg-row align-items-lg-start container">
+        <section id="product-section" class="w-100 d-flex flex-column align-items-center flex-md-row flex-md-wrap align-items-md-start ">
           <div class="d-none d-lg-grid text-center" id="product-info">
             <p></p>
             <p>Məhsul adı</p>
@@ -348,7 +349,7 @@
             <p></p>
           </div>
           
-          <div class="product-item my-1 d-flex flex-column align-items-center d-lg-grid">
+          <div class="product-item visible-item my-1 d-flex flex-column align-items-center align-self-md-stretch d-lg-grid">
             <div class="product-item-img"><img src="img/main/product/item-1.jpg"></div>
             <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Stepler "Maped 710"</p></div>
             <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">4.50</span><span> Azn</span></div>
@@ -364,8 +365,8 @@
             <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">4.50</span><span> Azn</span></div>
             <button class="btn btn-lg my-4 delete-product-button">Sil</button>
           </div>
-          <div class="product-item my-1 d-flex flex-column align-items-center d-lg-grid">
-            <div class="product-item-img"><img src="img/main/product/item-2.png"></div>
+          <div class="product-item visible-item my-1 d-flex flex-column align-items-center d-lg-grid">
+            <div class="product-item-img my-2"><img src="img/main/product/item-2.png"></div>
             <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Qələm "Gigis" 9684</p></div>
             <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">0.40</span><span> Azn</span></div>
             <div class="d-flex justify-content-center align-items-center product-item-number-div">
@@ -383,8 +384,8 @@
             <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">0.40</span><span> Azn</span></div>
             <button class="btn btn-lg my-4 delete-product-button">Sil</button>
           </div>
-          <div class="product-item my-1 d-flex flex-column align-items-center d-lg-grid">
-            <div class="product-item-img"><img src="img/main/product/item-3.jpg"></div>
+          <div class="product-item visible-item my-1 d-flex flex-column align-items-center d-lg-grid">
+            <div class="product-item-img my-2"><img src="img/main/product/item-3.jpg"></div>
             <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Qayçı "Maped"</p></div>
             <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">2.00</span><span> Azn</span></div>
             <div class="d-flex justify-content-center align-items-center product-item-number-div">
@@ -399,8 +400,8 @@
             <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">2.00</span><span> Azn</span></div>
             <button class="btn btn-lg my-4 delete-product-button">Sil</button>
           </div>
-          <div class="product-item my-1 d-flex flex-column align-items-center d-lg-grid">
-            <div class="product-item-img"><img src="img/main/product/item-4.jpg"></div>
+          <div class="product-item visible-item my-1 d-flex flex-column align-items-center align-self-md-stretch d-lg-grid">
+            <div class="product-item-img my-2"><img src="img/main/product/item-4.jpg"></div>
             <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Textmarker Maped/Grosso</p></div>
             <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">0.60</span><span> Azn</span></div>
             <div class="d-flex justify-content-center align-items-center product-item-number-div">
@@ -415,14 +416,321 @@
             <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">0.60</span><span> Azn</span></div>
             <button class="btn btn-lg my-4 delete-product-button">Sil</button>
           </div>
+          <div class="product-item visible-item my-1 d-flex flex-column align-items-center d-lg-grid">
+            <div class="product-item-img my-2"><img src="img/main/product/item-5.png"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Eti Adicto Intense</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">3.50</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">3.50</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item visible-item my-1 d-flex flex-column align-items-center d-lg-grid">
+            <div class="product-item-img my-2"><img src="img/main/product/item-6.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Tess "Ginger Mojito"</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">2.40</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">2.40</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item visible-item my-1 d-flex flex-column align-items-center d-lg-grid">
+            <div class="product-item-img my-2"><img src="img/main/product/item-7.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Qəhvə "Jardin" Latte</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">5.10</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">5.10</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item visible-item my-1 d-flex flex-column align-items-center d-lg-grid">
+            <div class="product-item-img my-2"><img src="img/main/product/item-8.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Qənd "Azərşəkər" 750qr</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">2.61</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">2.61</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+
+          <div class="product-item hidden-item my-1 d-flex flex-column align-items-center d-lg-grid d-none d-lg-none">
+            <div class="product-item-img my-2"><img src="img/slide/slide1.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Tualet təravətləndirici "Bref"</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">3.55</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">3.55</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item hidden-item my-1 d-flex flex-column align-items-center d-lg-grid d-none d-lg-none">
+            <div class="product-item-img my-2"><img src="img/slide/slide2.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Tualet kağızı "Selpak"</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">3.80</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">3.80</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item hidden-item my-1 d-flex flex-column align-items-center d-lg-grid d-none d-lg-none">
+            <div class="product-item-img my-2"><img src="img/slide/slide3.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Tualet kağızı "Aura"</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">8.56</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">8.56</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item hidden-item my-1 d-flex flex-column align-items-center d-lg-grid d-none d-lg-none">
+            <div class="product-item-img my-2"><img src="img/slide/slide4.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Tibbi üz maskası 50əd</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">6.10</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">6.10</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item hidden-item my-1 d-flex flex-column align-items-center d-lg-grid d-none d-lg-none">
+            <div class="product-item-img my-2"><img src="img/slide/slide5.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Mebel sprey "Pronto"</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">10.25</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">10.25</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item hidden-item my-1 d-flex flex-column align-items-center d-lg-grid d-none d-lg-none">
+            <div class="product-item-img my-2"><img src="img/slide/slide6.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Qab şampunu "Fairy"</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">4.40</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">4.40</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item hidden-item my-1 d-flex flex-column align-items-center d-lg-grid d-none d-lg-none">
+            <div class="product-item-img my-2"><img src="img/slide/slide7.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Sabun "Protex" 300ml</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">4.55</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">4.55</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
+          <div class="product-item hidden-item my-1 d-flex flex-column align-items-center d-lg-grid d-none d-lg-none">
+            <div class="product-item-img my-2"><img src="img/slide/slide8.jpg"></div>
+            <div class="text-center pb-2 product-name "><p class="d-lg-none">Məhsul adı:</p><p>Çay "Berqa" early grey</p></div>
+            <div class="text-center py-2"><p class="d-lg-none">Qiymət:</p><span class="product-price-value">10.40</span><span> Azn</span></div>
+            <div class="d-flex justify-content-center align-items-center product-item-number-div">
+              <button disabled class="decrase-button">-</button>
+              <input type="number" min="1" class="product-value" value="1" readonly>
+              <button class="increase-button">+</button>
+            </div>
+            <div class="py-3  d-flex flex-column align-items-center w-100 product-color">
+              <p class="p-1 d-lg-none">Rəng:</p>
+              <p>-</p>
+            </div>
+            <div class="text-center  py-2"><p class="d-lg-none">Cəmi:</p><span class="product-sum-value">10.40</span><span> Azn</span></div>
+            <button class="btn btn-lg my-4 delete-product-button">Sil</button>
+          </div>
           
           
         </section>
-        <section id="section-sebet" class="border d-flex flex-column align-items-center align-self-lg-start">
-          <p class="w-100 border-bottom border-dark py-2">Səbət</p>
+        <section id="section-sebet" class="d-flex flex-column align-items-center mt-lg-5 ">
+          <h5 class="w-100 border-bottom border-dark py-2">Səbət</h5>
           <div class="w-100 d-flex justify-content-between"><p>Cəmi</p><p><span id="common-product-sum-value">0.00</span><span> Azn</span></p></div>
           <button id="confirm-order-btn" class="btn btn-lg">Sifaşiri təsdiqlə</button>
         </section>
+      </section>
+      <section id="product-slide" class="d-flex flex-column justify-content-center align-items-center container">
+        <h2 class="py-4">Endirimli məhsullar</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center slide-item">
+                <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                  <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                  <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                  <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+                </div>  
+                <div class="slide-image"><img src="img/slide/slide1.jpg" class="w-100"></div>
+                <div class="mt-1 fs-5">Tualet Təravətləndirici "Bref"</div>
+                <p>3.55 Azn <span class="text-decoration-line-through">3.95 Azn</span></p>
+                <button class="product-order-btn">Səbətə at</button>  
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center slide-item">
+                <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                  <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                  <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                  <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+                </div>  
+                <div class="slide-image"><img src="img/slide/slide2.jpg" class="w-100"></div>
+                <div class="mt-1 fs-5">Tualet kağızı "Selpak"</div>
+                <p>3.80 Azn <span class="text-decoration-line-through">4.50 Azn</span></p>
+                <button class="product-order-btn">Səbətə at</button>  
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center slide-item">
+                <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                  <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                  <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                  <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+                </div>  
+                <div class="slide-image"><img src="img/slide/slide3.jpg" class="w-100"></div>
+                <div class="mt-1 fs-5">Tualet kağızı "Aura"</div>
+                <p>8.56 Azn <span class="text-decoration-line-through">9.30 Azn</span></p>
+                <button class="product-order-btn">Səbətə at</button>  
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center slide-item">
+                <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                  <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                  <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                  <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+                </div>  
+                <div class="slide-image"><img src="img/slide/slide4.jpg" class="w-100"></div>
+                <div class="mt-1 fs-5">Tibbi üz maskası 50əd</div>
+                <p>6.10 Azn <span class="text-decoration-line-through">7.30 Azn</span></p>
+                <button class="product-order-btn">Səbətə at</button>  
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center slide-item">
+                <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                  <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                  <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                  <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+                </div>  
+                <div class="slide-image"><img src="img/slide/slide5.jpg" class="w-100"></div>
+                <div class="mt-5 fs-5">Mebel Sprey "Pronto"</div>
+                <p>10.25 Azn <span class="text-decoration-line-through">12.50 Azn</span></p>
+                <button class="product-order-btn">Səbətə at</button>  
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center slide-item">
+                <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                  <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                  <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                  <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+                </div>  
+                <div class="slide-image"><img src="img/slide/slide6.jpg" class="w-100"></div>
+                <div class="mt-1 fs-5">Qab şampunu "Fairy"</div>
+                <p>4.40 Azn <span class="text-decoration-line-through">5.30 Azn</span></p>
+                <button class="product-order-btn">Səbətə at</button>  
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center slide-item">
+                <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                  <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                  <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                  <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+                </div>  
+                <div class="slide-image"><img src="img/slide/slide7.jpg" class="w-100"></div>
+                <div class="mt-1 fs-5">Sabun "Protex" 300ml</div>
+                <p>4.55 Azn <span class="text-decoration-line-through">5.60 Azn</span></p>
+                <button class="product-order-btn">Səbətə at</button>  
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center slide-item">
+                <div class="w-100 d-flex justify-content-between align-items-center card-icon">
+                  <span class="badge text-white py-2 px-3 ms-3" style="background-color: #fc8410;">Yeni</span>
+                  <button class="card-white-heart-btn"><i class="fa-regular fa-heart"></i></button>
+                  <button class="d-none card-favorite-btn"><i class="fa-solid fa-heart"></i></button>  
+                </div>  
+                <div class="slide-image"><img src="img/slide/slide8.jpg" class="w-100"></div>
+                <div class="mt-1 fs-5">Çay "Berqa" earl grey</div>
+                <p>10.40 Azn <span class="text-decoration-line-through">16.00 Azn</span></p>
+                <button class="product-order-btn">Səbətə at</button>  
+              </div>
+            </div>
+            
+            
+          </div>
+          
+        </div>
       </section>
     </main>
 
@@ -431,7 +739,7 @@
         class="d-flex flex-column flex-xl-row w-100 justify-content-md-around align-items-center"
       >
         <div id="footer-logo" class="d-flex flex-column align-items-center">
-          <img src="img/footer-logo.svg" alt="logo" />
+          <a href="../../lucky-main/index.html"><img src="img/footer-logo.svg" alt="logo" /></a>
           <div id="footer-icons" class="d-flex py-1">
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a
             ><a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -442,22 +750,22 @@
             class="d-flex flex-column align-items-center py-3 px-md-2 px-lg-5"
           >
             <h5>Kateqoriyalar</h5>
-            <a href="#">Ofis ləvazimatları</a>
-            <a href="#">Qida və İçkilər</a>
-            <a href="#">Təsərrüfat malları</a>
-            <a href="#">Elektron avadanlıq</a>
-            <a href="#">Dibçək gülləri</a>
-            <a href="#">Hədiyyəlik</a>
-            <a href="#">Coffee shop</a>
+            <a href="../../lucky-categories/1-office/index.html">Ofis ləvazimatları</a>
+            <a href="../../lucky-categories/2-food-drink/index.html">Qida və İçkilər</a>
+            <a href="../../lucky-categories/3-teserrufat/index.html">Təsərrüfat malları</a>
+            <a href="../../lucky-categories/4-elektron/index.html">Elektron avadanlıq</a>
+            <a href="../../lucky-categories/5-flower/index.html">Dibçək gülləri</a>
+            <a href="../../lucky-categories/6-gift/index.html">Hədiyyəlik</a>
+            <a href="../../lucky-categories/7-coffee/index.html">Coffee shop</a>
           </div>
           <div
             class="d-flex flex-column align-items-center py-3 px-md-2 px-lg-5"
           >
             <h5>Menyular</h5>
-            <a href="#">Haqqımızda</a>
-            <a href="#">Çatdırılma</a>
-            <a href="#">Geri qaytarılma və dəyişdirmə</a>
-            <a href="#">Əlaqə</a>
+            <a href="../../lucky-nav-links/1-lucky-info/index.html">Haqqımızda</a>
+            <a href="../../lucky-nav-links/5-lucky-terms/catdirilma/index.html">Çatdırılma</a>
+            <a href="../../lucky-nav-links/5-lucky-terms/qaytarilma/index.html">Geri qaytarılma və dəyişdirmə</a>
+            <a href="../../lucky-nav-links/6-lucky-contact/index.html">Əlaqə</a>
           </div>
           <div
             class="d-flex flex-column align-items-center py-3 px-md-2 px-lg-5"
@@ -490,12 +798,44 @@
       <i class="fa-solid fa-angle-up"></i>
     </button>
 
-    <script src="main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/3cf65b98ce.js"
-      crossorigin="anonymous"
-    ></script>
+    <div class="toast align-items-center text-bg-success border-0 position-fixed end-0 m-sm-3" id="product-toast" style="bottom: 10%; z-index: 999;" role="alert">
+      <div class="d-flex">
+        <div class="toast-body">
+          Məhsul səbətə əlavə olundu
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
 
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        autoplay: {
+        delay: 3000,
+        },
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4  ,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     
