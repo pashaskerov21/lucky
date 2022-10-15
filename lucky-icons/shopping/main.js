@@ -349,6 +349,7 @@ for(let i = 0; i < productOrderBtns.length; i++){
             let mainVal = parseFloat(commonProductSumValue.innerHTML);
             let hiddenVal = parseFloat(hiddenSumValue[index].innerHTML);
             let result = mainVal + hiddenVal;
+            mainSum = mainSum + hiddenVal;
             commonProductSumValue.innerHTML = result.toFixed(2);
         }
     })(i);
