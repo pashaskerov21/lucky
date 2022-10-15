@@ -278,6 +278,7 @@ for(let i = 0; i < deleteProductBtns.length;i++){
             let itemVal = parseFloat(productSumValue[index].innerHTML);
             let result = mainVal - itemVal;
             commonProductSumValue.innerHTML = result.toFixed(2);
+            mainSum = mainSum - itemVal;
             
 
             let shoppingSpanValue = parseInt(shoppingSpan.innerHTML);
